@@ -2,7 +2,7 @@
 <!DOCTYPE HTML>
 <html lang="" >
     <head>
-        <title>React Router · 小施的空间</title>
+        <title>爬楼梯 · 小施的空间</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -57,6 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="其他.html" />
+    
+    
+    <link rel="prev" href="动态规划.html" />
     
 
     </head>
@@ -105,9 +109,9 @@
         
         
     
-        <li class="chapter " data-level="2.1" data-path="../leecode/动态规划.html">
+        <li class="chapter " data-level="2.1" data-path="动态规划.html">
             
-                <a href="../leecode/动态规划.html">
+                <a href="动态规划.html">
             
                     
                     动态规划
@@ -119,9 +123,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.1.1" data-path="../leecode/爬楼梯.html">
+        <li class="chapter active" data-level="2.1.1" data-path="爬楼梯.html">
             
-                <a href="../leecode/爬楼梯.html">
+                <a href="爬楼梯.html">
             
                     
                     爬楼梯
@@ -132,9 +136,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.2" data-path="../leecode/其他.html">
+        <li class="chapter " data-level="2.1.2" data-path="其他.html">
             
-                <a href="../leecode/其他.html">
+                <a href="其他.html">
             
                     
                     其他
@@ -184,9 +188,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="3.1.1" data-path="react-router.html">
+        <li class="chapter " data-level="3.1.1" data-path="../baseFE/react-router.html">
             
-                <a href="react-router.html">
+                <a href="../baseFE/react-router.html">
             
                     
                     React Router
@@ -232,7 +236,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >React Router</a>
+        <a href=".." >爬楼梯</a>
     </h1>
 </div>
 
@@ -247,46 +251,28 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <blockquote>
-<p>&#x4E3A;&#x4EC0;&#x4E48;&#x9700;&#x8981; React-router&#xFF0C;&#x4E3A;&#x4E86;&#x6EE1;&#x8DB3;&#x66F4;&#x591A;&#x7684;&#x5355;&#x9875;&#x9762;&#x8DEF;&#x7531;&#x573A;&#x666F;&#xFF0C;&#x5982;&#x5D4C;&#x5957;&#x8DEF;&#x7531;&#xFF0C;&#x52A8;&#x6001;&#x8DEF;&#x7531;(/:id)</p>
-<p>Router &#x548C; Route &#x7684;&#x5173;&#x7CFB;</p>
-</blockquote>
-<ul>
-<li><p>Router: &#x5B8C;&#x6574;&#x7684;&#x8DEF;&#x7531;&#x89E3;&#x51B3;&#x65B9;&#x6848;</p>
-<ul>
-<li>&#x5B9A;&#x4E49;&#xFF1A;React Router &#x4FDD;&#x6301; UI &#x4E0E; URL &#x540C;&#x6B65;&#x3002;&#x5B83;&#x62E5;&#x6709;&#x7B80;&#x5355;&#x7684; API &#x4E0E;&#x5F3A;&#x5927;&#x7684;&#x529F;&#x80FD;&#x4F8B;&#x5982;&#x4EE3;&#x7801;&#x7F13;&#x51B2;&#x52A0;&#x8F7D;&#x3001;&#x52A8;&#x6001;&#x8DEF;&#x7531;&#x5339;&#x914D;&#x3001;&#x4EE5;&#x53CA;&#x5EFA;&#x7ACB;&#x6B63;&#x786E;&#x7684;&#x4F4D;&#x7F6E;&#x8FC7;&#x6E21;&#x5904;&#x7406;&#x3002;</li>
-<li>&#x914D;&#x7F6E;&#x65B9;&#x5F0F;&#xFF1A;JSX &amp; &#x5BF9;&#x8C61;</li>
-<li>&#x5206;&#x7C7B;: Router &#x5305;&#x62EC; HashRouter&#x3001;BrowserRouter&#x3001;createMemoryHistory&#xFF0C;&#x5B83;&#x4E3B;&#x8981;&#x5B9A;&#x4E49;&#x4E86; Router &#x7684;&#x6A21;&#x5F0F;</li>
-</ul>
-</li>
-<li><p>Route: &#x8DEF;&#x7531; </p>
-<p>  Switch/Route &#x4E00;&#x822C;&#x548C; Link</p>
-</li>
-<li><p>&#x5E94;&#x7528;&#xFF1A;React Router &#x77E5;&#x9053;&#x5982;&#x4F55;&#x4E3A;&#x6211;&#x4EEC;&#x642D;&#x5EFA;&#x5D4C;&#x5957;&#x7684; UI&#xFF0C;&#x56E0;&#x6B64;&#x6211;&#x4EEC;&#x4E0D;&#x7528;&#x624B;&#x52A8;&#x627E;&#x51FA;&#x9700;&#x8981;&#x6E32;&#x67D3;&#x54EA;&#x4E9B; <child> &#x7EC4;&#x4EF6;&#x3002;</child></p>
-</li>
-</ul>
-<pre><code>// JSX &#x914D;&#x7F6E;&#x65B9;&#x5F0F;
-  &lt;Router&gt;
-    &lt;Route path=&quot;/&quot; component={App}&gt;
-      &lt;Route path=&quot;about&quot; component={About} /&gt;
-      &lt;Route path=&quot;inbox&quot; component={Inbox} /&gt;
-    &lt;/Route&gt;
-  &lt;/Router&gt;
-</code></pre><blockquote>
-<p>react-router-dom &#x548C; react-router &#x5305;&#x6709;&#x4EC0;&#x4E48;&#x533A;&#x522B;</p>
-</blockquote>
-<pre><code>import { HashRouter, BrowserRouter, Route, Link, Switch } from &apos;react-router-dom&apos;;
-import { Router, Route, Link } from &apos;react-router&apos;
-</code></pre><blockquote>
-<p>react-router &#x57FA;&#x4E8E; window.history &#x505A;&#x4E86;&#x4EC0;&#x4E48;&#xFF1F;</p>
-</blockquote>
-<p>... </p>
-<blockquote>
-<p>&#x53C2;&#x8003;&#x6587;&#x732E;</p>
-</blockquote>
+                                <h1 id="&#x722C;&#x697C;&#x68AF;">&#x722C;&#x697C;&#x68AF;</h1>
+<p>&#x9898;&#x76EE;&#xFF1A;<a href="https://leetcode-cn.com/problems/climbing-stairs/&#x200B;" _target="blank">https://leetcode-cn.com/problems/climbing-stairs/&#x200B;</a></p>
+<p>&#x9996;&#x5148;&#xFF0C;&#x4EC0;&#x4E48;&#x662F;&#x52A8;&#x6001;&#x89C4;&#x5212;&#xFF1F;</p>
+<p>&#x52A8;&#x6001;&#x89C4;&#x5212;&#x7684;&#x601D;&#x8DEF; = &#x9012;&#x5F52; + &#x8BB0;&#x5FC6;</p>
+<p>&#x8FD9;&#x9053;&#x7B97;&#x6CD5;&#x9898;&#x4ECE; 3 &#x79CD;&#x89E3;&#x6CD5;&#x4E00;&#x4E00;&#x8BF4;&#x660E;</p>
 <ol>
-<li><a href="https://react-guide.github.io/react-router-cn/docs/Introduction.html" _target="blank">https://react-guide.github.io/react-router-cn/docs/Introduction.html</a></li>
+<li>&#x66B4;&#x529B;&#x9012;&#x5F52;&#xFF0C;&#x7531;&#x4E0B;&#x56FE;&#x53EF;&#x89C1;&#xFF0C;&#x91CD;&#x590D;&#x8BA1;&#x7B97;&#x5DE5;&#x4F5C;&#x968F;&#x7740; n &#x7684;&#x5927;&#x5C0F;&#x6307;&#x6570;&#x500D;&#x4E0A;&#x5347;</li>
 </ol>
+<p>&#x601D;&#x8DEF;&#xFF1A;f(n-1) + f(n-2)&#xFF0C;&#x8BB0;&#x5F97;&#x9C81;&#x68D2;
+<img src="img/&#x722C;&#x697C;&#x68AF;.png" alt="&#x9012;&#x5F52;"></p>
+<ol>
+<li>&#x52A8;&#x6001;&#x89C4;&#x5212;&#xFF1A;&#x81EA;&#x9876;&#x5411;&#x4E0B;</li>
+</ol>
+<p>&#x601D;&#x8DEF;&#xFF1A;&#x57FA;&#x4E8E;1&#xFF0C;&#x65B0;&#x589E; cacheArray&#xFF0C;&#x5F53;cacheArray[n] &#x4E0D;&#x4E3A;&#x7A7A;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x8FDB;&#x884C;&#x50A8;&#x5B58;&#xFF0C;&#x6700;&#x540E;&#x7ED3;&#x679C;&#x8FD4;&#x56DE; cacheArray[n]</p>
+<ol>
+<li>&#x52A8;&#x6001;&#x89C4;&#x5212;&#xFF1A;&#x81EA;&#x5E95;&#x5411;&#x4E0A;</li>
+</ol>
+<p>&#x601D;&#x8DEF;&#xFF1A;&#x57FA;&#x4E8E; 2 &#xFF0C;&#x4E3A;&#x4E86;&#x4F18;&#x5316;&#x7A7A;&#x95F4;&#xFF0C;&#x5C06;&#x6570;&#x7EC4;&#x66FF;&#x6362;&#x6210; 2 &#x4E2A;&#x53D8;&#x91CF;</p>
+<p>Previous
+&#x6982;&#x89C8;&#x9875;</p>
+<p>Last updated 2 hours ago
+WAS THIS PAGE HELPFUL?</p>
 
                                 
                                 </section>
@@ -314,6 +300,14 @@ import { Router, Route, Link } from &apos;react-router&apos;
 
             
                 
+                <a href="动态规划.html" class="navigation navigation-prev " aria-label="Previous page: 动态规划">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="其他.html" class="navigation navigation-next " aria-label="Next page: 其他">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -322,7 +316,7 @@ import { Router, Route, Link } from &apos;react-router&apos;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"React Router","level":"3.1.1","depth":2,"previous":{"title":"SPA","level":"3.1","depth":1,"ref":"","articles":[{"title":"React Router","level":"3.1.1","depth":2,"path":"baseFE/react-router.md","ref":"baseFE/react-router.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"shiqiongzhen","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"小施的空间","gitbook":"*","description":"日积跬步，宁静致远"},"file":{"path":"baseFE/react-router.md","mtime":"2021-06-01T09:14:40.000Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2021-06-01T09:22:16.358Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"爬楼梯","level":"2.1.1","depth":2,"next":{"title":"其他","level":"2.1.2","depth":2,"path":"leecode/其他.md","ref":"leecode/其他.md","articles":[]},"previous":{"title":"动态规划","level":"2.1","depth":1,"path":"leecode/动态规划.md","ref":"leecode/动态规划.md","articles":[{"title":"爬楼梯","level":"2.1.1","depth":2,"path":"leecode/爬楼梯.md","ref":"leecode/爬楼梯.md","articles":[]},{"title":"其他","level":"2.1.2","depth":2,"path":"leecode/其他.md","ref":"leecode/其他.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"shiqiongzhen","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"小施的空间","gitbook":"*","description":"日积跬步，宁静致远"},"file":{"path":"leecode/爬楼梯.md","mtime":"2021-05-24T01:59:37.000Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2021-06-01T09:40:06.179Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
