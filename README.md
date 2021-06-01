@@ -5,9 +5,6 @@
 - 邮箱：951304828@qq.com
 - github: [https://github.com/shiqiongzhen](https://github.com/shiqiongzhen)
 
-# 服务介绍
-个人博客：[https://shiqiongzhen.github.io/docs](https://shiqiongzhen.github.io/docs)
-
 # 其他 
 gitbook 命令
 
