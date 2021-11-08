@@ -1,5 +1,47 @@
 {
     "title": "小施的空间",
     "author": "shiqiongzhen",
-    "description": "日积跬步，宁静致远"
+    "description": "日积跬步，宁静致远",
+    "language": "zh-hans",
+    "plugins": [
+        "-highlight",
+        "-github",
+        "-search",
+        "-lunr",
+        "livereload",
+        "back-to-top-button",
+        "code",
+        "prism",
+        "copy-code-button",
+        "search-pro",
+        "splitter",
+        "-sharing-plus",
+        "tbfed-pagefooter",
+        "click-reveal",
+        "baidu",
+        "valine",
+        "expandable-chapters",
+        "donate",
+        "toc"
+    ],
+    "pluginsConfig": {
+        "tbfed-pagefooter": {
+            "modify_label": "该文件修订时间：",
+            "modify_format": "YYYY-MM-DD HH:mm:ss"
+        },
+        "baidu": {
+            "token": "121.4c4588ec47c3f1157290814a95373cfa.Yn1kZNjGLaj3SQQOjsS73g5OBBYSNt1QNYEitgA.Ided6w"
+        },
+        "valine": {
+            "appId": "sYmTtyOH2fH7uf4VwtoFRUXd-gzGzoHsz",
+            "appKey": "iqiqWENgagpE0W4yJrOzqRD5"
+        },
+        "donate": {
+            "wechat": "../assets/wechat.jpeg",
+            "alipay": "../assets/alipay.jpeg",
+            "button": "打赏",
+            "alipayText": "支付宝扫码",
+            "wechatText": "微信扫码"
+        }
+    }
 }

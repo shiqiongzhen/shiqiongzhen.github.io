@@ -1,0 +1,549 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <title>动态规划 · 小施的空间</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.0.0">
+        <meta name="author" content="shiqiongzhen">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-click-reveal/click_reveal.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="爬楼梯.html" />
+    
+    
+    <link rel="prev" href="../" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">每日算法</li>
+        
+        
+    
+        <li class="chapter active" data-level="2.1" data-path="动态规划.html">
+            
+                <a href="动态规划.html">
+            
+                    
+                    动态规划
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="爬楼梯.html">
+            
+                <a href="爬楼梯.html">
+            
+                    
+                    爬楼梯
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="其他.html">
+            
+                <a href="其他.html">
+            
+                    
+                    其他
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" >
+            
+                <span>
+            
+                    
+                    树
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../demo/箭头函数&普通函数.html">
+            
+                <a href="../demo/箭头函数&普通函数.html">
+            
+                    
+                    asda
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">每日总结</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" >
+            
+                <span>
+            
+                    
+                    SPA
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../baseFE/react-router.html">
+            
+                <a href="../baseFE/react-router.html">
+            
+                    
+                    React Router
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" >
+            
+                <span>
+            
+                    
+                    JavaScript
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="../baseFE/迭代器与生成器.html">
+            
+                <a href="../baseFE/迭代器与生成器.html">
+            
+                    
+                    迭代器与生成器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >动态规划</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <blockquote>
+<p>&#x52A8;&#x6001;&#x89C4;&#x5212;&#x5E38;&#x89C1;&#x7684;&#x51E0;&#x4E2A;&#x6B65;&#x9AA4;</p>
+</blockquote>
+<ol>
+<li>&#x786E;&#x5B9A;&#x72B6;&#x6001;</li>
+<li>&#x627E;&#x5230;&#x8F6C;&#x79FB;&#x516C;&#x5F0F;</li>
+<li>&#x786E;&#x5B9A;&#x521D;&#x59CB;&#x6761;&#x4EF6;&#x4EE5;&#x53CA;&#x8FB9;&#x754C;&#x6761;&#x4EF6;</li>
+<li>&#x8BA1;&#x7B97;&#x7ED3;&#x679C;</li>
+</ol>
+<blockquote>
+<p>&#x4F8B;&#x5B50;1: &#x4E70;&#x80A1;&#x7968;&#x7684;&#x6700;&#x4F73;&#x65F6;&#x673A;</p>
+</blockquote>
+<p><img src="img/&#x80A1;&#x7968;k&#x7EBF;&#x56FE;.png" alt="&#x4E70;&#x80A1;&#x7968;&#x7684;&#x6700;&#x4F73;&#x65F6;&#x673A;"></p>
+<p>&#x6211;&#x4EEC;&#x53EA;&#x9700;&#x8981;&#x904D;&#x5386;&#x4EF7;&#x683C;&#x6570;&#x7EC4;&#x4E00;&#x904D;&#xFF0C;&#x8BB0;&#x5F55;&#x5386;&#x53F2;&#x6700;&#x4F4E;&#x70B9;&#xFF0C;&#x7136;&#x540E;&#x5728;&#x6BCF;&#x4E00;&#x5929;&#x8003;&#x8651;&#x8FD9;&#x4E48;&#x4E00;&#x4E2A;&#x95EE;&#x9898;&#xFF1A;&#x5982;&#x679C;&#x6211;&#x662F;&#x5728;&#x5386;&#x53F2;&#x6700;&#x4F4E;&#x70B9;&#x4E70;&#x8FDB;&#x7684;&#xFF0C;&#x90A3;&#x4E48;&#x6211;&#x4ECA;&#x5929;&#x5356;&#x51FA;&#x80FD;&#x8D5A;&#x591A;&#x5C11;&#x94B1;&#xFF1F;</p>
+<ul>
+<li><p>&#x786E;&#x5B9A;&#x72B6;&#x6001;</p>
+<ul>
+<li>&#x7528;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#x8BB0;&#x5F55;&#x4E00;&#x4E2A;&#x5386;&#x53F2;&#x6700;&#x4F4E;&#x4EF7;&#x683C; minprice</li>
+<li>&#x7528;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#x8BB0;&#x5F55;&#x4E00;&#x4E2A;&#x5386;&#x53F2;&#x6700;&#x5927;&#x76C8;&#x5229;&#x503C;</li>
+</ul>
+</li>
+<li><p>&#x627E;&#x5230;&#x8F6C;&#x79FB;&#x516C;&#x5F0F;</p>
+<ul>
+<li>&#x5F53;&#x5929;&#x5356;&#x51FA;&#x7684;&#x76C8;&#x5229;&#x503C;&#xFF1A;prices[i] - minprice&#xFF0C;&#x4E0E;&#x5386;&#x53F2;&#x65F6;&#x95F4;&#x5356;&#x51FA;&#x7684;&#x6700;&#x5927;&#x76C8;&#x5229;&#x503C;&#x4F5C;&#x6BD4;&#x8F83;&#xFF0C;&#x5F97;&#x51FA;&#x6700;&#x5927;&#x503C;</li>
+</ul>
+</li>
+<li><p>&#x786E;&#x5B9A;&#x521D;&#x59CB;&#x6761;&#x4EF6;&#x4EE5;&#x53CA;&#x8FB9;&#x754C;&#x6761;&#x4EF6;</p>
+<ul>
+<li>minprice &#x521D;&#x59CB;&#x503C;&#x4E3A; Number.MAX_SAFE_INTEGER, &#x8FD9;&#x6837;&#x7B2C;&#x4E00;&#x5929;&#x80A1;&#x4EF7;&#x80AF;&#x5B9A; &lt; minprice&#xFF0C;&#x5219; minprice = &#x7B2C;&#x4E00;&#x5929;&#x80A1;&#x4EF7;</li>
+<li>maxProfit &#x521D;&#x59CB;&#x503C;&#x4E3A; 0&#x3002;</li>
+</ul>
+</li>
+<li><p>&#x8BA1;&#x7B97;&#x7ED3;&#x679C;</p>
+<pre class="language-"><code>var maxProfit = function(prices) {
+  let max = 0
+  let min = Number.MAX_SAFE_INTEGER
+  for(let i=0;i<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>prices.length;i++)</span> <span class="token attr-name">{</span>
+      <span class="token attr-name">if(prices[i]&lt;min)</span> <span class="token attr-name">min</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>prices[i]</span>
+      <span class="token attr-name">if((prices[i]-min)</span> <span class="token punctuation">&gt;</span></span> max) max = prices[i]-min
+  }
+  return max
+}
+</code></pre></li>
+</ul>
+<blockquote>
+<p>&#x4F8B;&#x5B50;2: &#x6700;&#x5927;&#x5B50;&#x5E8F;&#x548C;</p>
+</blockquote>
+<ul>
+<li><p>&#x786E;&#x5B9A;&#x72B6;&#x6001;</p>
+<ul>
+<li>&#x5B9A;&#x4E49;dp[i]&#x8868;&#x793A;&#x6570;&#x7EC4;&#x4E2D;&#x524D; i+1 &#x4E2A;&#x5143;&#x7D20;&#x6784;&#x6210;&#x7684;&#x8FDE;&#x7EED;&#x5B50;&#x6570;&#x7EC4;&#x7684;&#x6700;&#x5927;&#x548C;</li>
+</ul>
+</li>
+<li><p>&#x8F6C;&#x79FB;&#x516C;&#x5F0F;</p>
+<ul>
+<li>&#x5982;&#x679C; dp[i-1]&lt;0, &#x5219;&#x4E0D;&#x7D2F;&#x52A0;&#x3002;&#x5373;&#x7B2C; dp[i] = Math.max(0, dp[i-1]) + inputNums[i]</li>
+</ul>
+</li>
+<li><p>&#x786E;&#x5B9A;&#x521D;&#x59CB;&#x6761;&#x4EF6;&#x4EE5;&#x53CA;&#x8FB9;&#x754C;&#x6761;&#x4EF6;</p>
+<ul>
+<li>dp[0] = nums[0]</li>
+</ul>
+</li>
+<li><p>&#x8BA1;&#x7B97;&#x7ED3;&#x679C;</p>
+<pre class="language-"><code>var maxSubArray = function(nums) {
+  const len = nums.length
+  const dp = []
+  for(let i=0;i&lt;len;i++) {
+      if(i===0) dp[0] = nums[i]
+      if(i&gt;=1) dp[i] = Math.max(0, dp[i-1]) + nums[i]
+  }
+  return Math.max(...dp)
+};
+</code></pre></li>
+</ul>
+<blockquote>
+<p>&#x4F8B;&#x5B50;3: &#x6253;&#x5BB6;&#x52AB;&#x820D;</p>
+</blockquote>
+<ul>
+<li><p>&#x786E;&#x5B9A;&#x72B6;&#x6001;</p>
+<ul>
+<li>&#x5B9A;&#x4E49;dp[i]&#x8868;&#x793A;&#x6570;&#x7EC4;&#x4E2D; i &#x4E2A;&#x5143;&#x7D20;&#x5077;&#x7684;&#x6700;&#x5927;&#x603B;&#x91D1;&#x989D;</li>
+</ul>
+</li>
+<li><p>&#x8F6C;&#x79FB;&#x516C;&#x5F0F;</p>
+<ul>
+<li>dp[i] = Math.max(dp[i-2]+nums[i], dp[i])&#x3002;&#x7531;&#x4E8E;&#x4E24;&#x95F4;&#x76F8;&#x90BB;&#x7684;&#x623F;&#x5C4B;&#x5728;&#x540C;&#x4E00;&#x665A;&#x4E0A;&#x88AB;&#x5C0F;&#x5077;&#x95EF;&#x5165;&#xFF0C;&#x7CFB;&#x7EDF;&#x4F1A;&#x81EA;&#x52A8;&#x62A5;&#x8B66;&#x3002;&#x6240;&#x4EE5;dp[i]&#x4E0D;&#x662F;dp[i-1]&#xFF08;&#x6CA1;&#x5077;dp[i]&#xFF09;&#xFF0C;&#x5C31;&#x662F;dp[i]+dp[i-2]&#xFF08;&#x5077;&#x4E86;dp[i]&#xFF09;</li>
+</ul>
+</li>
+<li><p>&#x786E;&#x5B9A;&#x521D;&#x59CB;&#x6761;&#x4EF6;&#x4EE5;&#x53CA;&#x8FB9;&#x754C;&#x6761;&#x4EF6;</p>
+<ul>
+<li>&#x81EA;&#x5E95;&#x5411;&#x4E0A;&#x63A8;&#xFF0C;dp[0] = inputNums[0]</li>
+<li>dp[1] = Math.max(inputNums[0], inputNums[1])</li>
+</ul>
+</li>
+<li><p>&#x8BA1;&#x7B97;&#x7ED3;&#x679C;</p>
+<pre class="language-"><code>var rob = function(nums) {
+  const len =nums.length
+  let dp = []
+  for(let i = 0; i&lt;len; i++) {
+      if(i === 0) dp[0] = nums[0]
+          else if(i === 1) dp[1] = Math.max(nums[0], nums[1])
+              else {
+                  dp[i] = Math.max(dp[i-1], dp[i-2]+nums[i])
+              }
+  }
+  return dp[len-1]
+};
+</code></pre></li>
+</ul>
+<p><footer class="page-footer"><span class="copyright">powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2021-11-08 16:39:46
+</span></footer><hr><div id="vcomments"></div><script src="//unpkg.com/valine/dist/Valine.min.js"></script><script>new Valine({el: "#vcomments",appId: 'sYmTtyOH2fH7uf4VwtoFRUXd-gzGzoHsz',appKey: 'iqiqWENgagpE0W4yJrOzqRD5',placeholder: 'Just go go',avatar: '',meta: undefined,pageSize: 10,lang: 'zh-CN',recordIP: false})</script></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../" class="navigation navigation-prev " aria-label="Previous page: 简介">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="爬楼梯.html" class="navigation navigation-next " aria-label="Next page: 爬楼梯">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"动态规划","level":"2.1","depth":1,"next":{"title":"爬楼梯","level":"2.1.1","depth":2,"path":"leecode/爬楼梯.md","ref":"leecode/爬楼梯.md","articles":[]},"previous":{"title":"简介","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-highlight","-github","-search","-lunr","livereload","back-to-top-button","code","prism","copy-code-button","search-pro","splitter","-sharing-plus","tbfed-pagefooter","click-reveal","baidu","valine","expandable-chapters","donate","toc","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{},"livereload":{},"splitter":{},"search-pro":{},"toc":{},"code":{"copyButtons":true},"donate":{"wechat":"../assets/wechat.jpeg","alipay":"../assets/alipay.jpeg","button":"打赏","alipayText":"支付宝扫码","wechatText":"微信扫码","title":""},"fontsettings":{"theme":"white","family":"sans","size":2},"click-reveal":{},"back-to-top-button":{},"copy-code-button":{},"baidu":{"token":"121.4c4588ec47c3f1157290814a95373cfa.Yn1kZNjGLaj3SQQOjsS73g5OBBYSNt1QNYEitgA.Ided6w"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{},"valine":{"appId":"sYmTtyOH2fH7uf4VwtoFRUXd-gzGzoHsz","appKey":"iqiqWENgagpE0W4yJrOzqRD5","avatar":"","lang":"zh-CN","pageSize":10,"placeholder":"Just go go","recordIP":false}},"theme":"default","author":"shiqiongzhen","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"小施的空间","language":"zh-hans","gitbook":"*","description":"日积跬步，宁静致远"},"file":{"path":"leecode/动态规划.md","mtime":"2021-11-08T08:39:46.000Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2021-11-08T15:25:12.138Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-click-reveal/click_reveal.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-baidu/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
+        
+    
+
+    </body>
+</html>
+

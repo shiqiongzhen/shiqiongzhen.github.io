@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // https://article.itxueyuan.com/RwAnXl
+      // 为链表数据结构实现
+      class Node {
+        constructor(value) {
+          this.value = value;
+          this.next = null;
+        }
+      }
+
+      class Link {
+        /**
+         * 构造函数
+         */
+        constructor(value) {
+          this.head = new Node(value);
+        }
+
+        /**
+         * 插入
+         * @param {any} value
+         * @param {any} item
+         */
+        insert(value, item) {
+          let node = new Node(value);
+          let current = this.find(item);
+          node.next = current.next;
+          current.next = node;
+        }
+
+        /**
+         * 查询节点
+         * @param {any} item
+         * @returns {Node}
+         */
+        find(item) {
+          let current = this.head;
+          while (current && current.value != item) {
+            current = current.next;
+          }
+          return current;
+        }
+
+        /**
+         * iterator接口实现
+         */
+        [Symbol.iterator]() {
+          let current = null,
+            target = this;
+          return {
+            next() {
+              current = current != null ? current.next : target.head;
+              if (current != null) {
+                return { value: current.value, done: false };
+              }
+              return { value: undefined, done: true };
+            },
+            return() {
+              return { done: true };
+            },
+          };
+        }
+      }
+
+      let l = new Link(0);
+
+      l.insert(2, 0);
+      l.insert(5, 2);
+      l.insert(3, 2); // 到2的后面插入一个3
+
+      // for..of 方式调用接口
+      for (let o of l) {
+        console.log(o);
+      }
+
+      // 扩展运算符调用接口
+      console.log(...l);
+
+      // 手动调用。
+      // 获取接口对象
+      let iter = l[Symbol.iterator]();
+      // 调用next 方法
+      console.log(iter.next());
+      console.log(iter.next());
+      console.log(iter.next());
+    </script>
+  </body>
+</html>

@@ -1,6 +1,6 @@
 
 <!DOCTYPE HTML>
-<html lang="" >
+<html lang="zh-hans" >
     <head>
         <title>动态规划 · 小施的空间</title>
         <meta charset="UTF-8">
@@ -17,11 +17,39 @@
     
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-click-reveal/click_reveal.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-donate/plugin.css">
                 
             
                 
@@ -33,6 +61,8 @@
     
 
     
+        
+        <link rel="stylesheet" href="../styles/website.css">
         
     
         
@@ -159,9 +189,22 @@
                 <span>
             
                     
-                    [树]
+                    树
             
                 </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../demo/箭头函数&普通函数.html">
+            
+                <a href="../demo/箭头函数&普通函数.html">
+            
+                    
+                    asda
+            
+                </a>
             
 
             
@@ -316,12 +359,12 @@
 </ul>
 </li>
 <li><p>&#x8BA1;&#x7B97;&#x7ED3;&#x679C;</p>
-<pre><code>var maxProfit = function(prices) {
+<pre class="language-"><code>var maxProfit = function(prices) {
   let max = 0
   let min = Number.MAX_SAFE_INTEGER
-  for(let i=0;i&lt;prices.length;i++) {
-      if(prices[i]&lt;min) min=prices[i]
-      if((prices[i]-min) &gt; max) max = prices[i]-min
+  for(let i=0;i<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>prices.length;i++)</span> <span class="token attr-name">{</span>
+      <span class="token attr-name">if(prices[i]&lt;min)</span> <span class="token attr-name">min</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>prices[i]</span>
+      <span class="token attr-name">if((prices[i]-min)</span> <span class="token punctuation">&gt;</span></span> max) max = prices[i]-min
   }
   return max
 }
@@ -347,7 +390,7 @@
 </ul>
 </li>
 <li><p>&#x8BA1;&#x7B97;&#x7ED3;&#x679C;</p>
-<pre><code>var maxSubArray = function(nums) {
+<pre class="language-"><code>var maxSubArray = function(nums) {
   const len = nums.length
   const dp = []
   for(let i=0;i&lt;len;i++) {
@@ -379,7 +422,7 @@
 </ul>
 </li>
 <li><p>&#x8BA1;&#x7B97;&#x7ED3;&#x679C;</p>
-<pre><code>var rob = function(nums) {
+<pre class="language-"><code>var rob = function(nums) {
   const len =nums.length
   let dp = []
   for(let i = 0; i&lt;len; i++) {
@@ -393,6 +436,9 @@
 };
 </code></pre></li>
 </ul>
+<p><footer class="page-footer"><span class="copyright">powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2021-11-08 16:39:46
+</span></footer><hr><div id="vcomments"></div><script src="//unpkg.com/valine/dist/Valine.min.js"></script><script>new Valine({el: "#vcomments",appId: 'sYmTtyOH2fH7uf4VwtoFRUXd-gzGzoHsz',appKey: 'iqiqWENgagpE0W4yJrOzqRD5',placeholder: 'Just go go',avatar: '',meta: undefined,pageSize: 10,lang: 'zh-CN',recordIP: false})</script></p>
 
                                 
                                 </section>
@@ -436,7 +482,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"动态规划","level":"2.1","depth":1,"next":{"title":"爬楼梯","level":"2.1.1","depth":2,"path":"leecode/爬楼梯.md","ref":"leecode/爬楼梯.md","articles":[]},"previous":{"title":"简介","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"shiqiongzhen","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"小施的空间","gitbook":"*","description":"日积跬步，宁静致远"},"file":{"path":"leecode/动态规划.md","mtime":"2021-05-23T12:45:28.000Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2021-06-08T08:14:26.047Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"动态规划","level":"2.1","depth":1,"next":{"title":"爬楼梯","level":"2.1.1","depth":2,"path":"leecode/爬楼梯.md","ref":"leecode/爬楼梯.md","articles":[]},"previous":{"title":"简介","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-highlight","-github","-search","-lunr","livereload","back-to-top-button","code","prism","copy-code-button","search-pro","splitter","-sharing-plus","tbfed-pagefooter","click-reveal","baidu","valine","expandable-chapters","donate","toc"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{},"livereload":{},"splitter":{},"search-pro":{},"toc":{},"code":{"copyButtons":true},"donate":{"wechat":"../assets/wechat.jpeg","alipay":"../assets/alipay.jpeg","button":"打赏","alipayText":"支付宝扫码","wechatText":"微信扫码","title":""},"fontsettings":{"theme":"white","family":"sans","size":2},"click-reveal":{},"back-to-top-button":{},"copy-code-button":{},"baidu":{"token":"121.4c4588ec47c3f1157290814a95373cfa.Yn1kZNjGLaj3SQQOjsS73g5OBBYSNt1QNYEitgA.Ided6w"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{},"valine":{"appId":"sYmTtyOH2fH7uf4VwtoFRUXd-gzGzoHsz","appKey":"iqiqWENgagpE0W4yJrOzqRD5","avatar":"","lang":"zh-CN","pageSize":10,"placeholder":"Just go go","recordIP":false}},"theme":"default","author":"shiqiongzhen","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"小施的空间","language":"zh-hans","gitbook":"*","description":"日积跬步，宁静致远"},"file":{"path":"leecode/动态规划.md","mtime":"2021-11-08T08:39:46.000Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2021-11-08T15:26:28.375Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -446,19 +492,47 @@
     <script src="../gitbook/theme.js"></script>
     
         
-        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        <script src="../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-click-reveal/click_reveal.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-baidu/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-donate/plugin.js"></script>
         
     
         
